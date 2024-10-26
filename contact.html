@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نبلاء التقنية - اتصل بنا</title>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+</head>
+<body>
+    <header>
+        <h1>نبلاء التقنية</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="articles.html">المقالات</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>اتصل بنا</h2>
+        <form id="contactForm">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="message">رسالتك:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <button type="submit">إرسال</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 نبلاء التقنية. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="js/firebase.js"></script>
+</body>
+</html>
