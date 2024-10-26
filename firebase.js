@@ -22,20 +22,22 @@ function submitForm(e) {
 
     // الحصول على القيم
     var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value
     var message = document.getElementById('message').value;
 
     // حفظ الرسالة في Firebase
-    saveMessage(name, message);
+    saveMessage(name,  email, message);
 
     // إعادة تعيين النموذج بعد الإرسال
     document.getElementById('contactForm').reset();
 }
 
 // حفظ الرسالة إلى Firebase
-function saveMessage(name, message) {
+function saveMessage(name,  email, message) {
     var newMessageRef = messagesRef.push();
     newMessageRef.set({
         name: name,
+        email: email,
         message: message
     });
 }
