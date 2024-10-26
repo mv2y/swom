@@ -1,12 +1,12 @@
 // تكوين Firebase
 var firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-    databaseURL: "https://YOUR_PROJECT_ID.firebaseio.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT_ID.appspot.com",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyBsiKfixDMSYY1Xvv2wmsXdg-jNP6c-zqU",
+    authDomain: "tvtc-swom.firebaseapp.com",
+    databaseURL: "https://tvtc-swom-default-rtdb.firebaseio.com",
+    projectId: "tvtc-swom",
+    storageBucket: "tvtc-swom.appspot.com",
+    messagingSenderId: "511661649198",
+    appId: "1:511661649198:web:1d53385172f7d114bc1ebf",
 };
 // تهيئة Firebase
 firebase.initializeApp(firebaseConfig);
