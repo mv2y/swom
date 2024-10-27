@@ -1,12 +1,12 @@
 // تكوين Firebase - قم باستبدال القيم بمعلومات مشروعك من Firebase Console
-var firebaseConfig = {
-    apiKey: "AIzaSyBsiKfixDMSYY1Xvv2wmsXdg-jNP6c-zqU",
-    authDomain: "tvtc-swom.firebaseapp.com",
-    databaseURL: "https://tvtc-swom-default-rtdb.firebaseio.com",
-    projectId: "tvtc-swom",
-    storageBucket: "tvtc-swom.appspot.com",
-    messagingSenderId: "511661649198",
-    appId: "1:511661649198:web:1d53385172f7d114bc1ebf"
+const firebaseConfig = {
+  apiKey: "AIzaSyDORqDeI0KxwNSvVlnMPNDo9-L3haUmjpg",
+  authDomain: "swom-cee14.firebaseapp.com",
+  projectId: "swom-cee14",
+  storageBucket: "swom-cee14.appspot.com",
+  messagingSenderId: "363742687449",
+  appId: "1:363742687449:web:04f862995bb556cd964ec8",
+  measurementId: "G-T2L2X1MFV3"
 };
 
 // تهيئة Firebase
