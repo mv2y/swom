@@ -1,4 +1,4 @@
-// تكوين Firebase
+// تكوين Firebase - قم باستبدال القيم بمعلومات مشروعك من Firebase Console
 var firebaseConfig = {
     apiKey: "AIzaSyBsiKfixDMSYY1Xvv2wmsXdg-jNP6c-zqU",
     authDomain: "tvtc-swom.firebaseapp.com",
@@ -6,8 +6,9 @@ var firebaseConfig = {
     projectId: "tvtc-swom",
     storageBucket: "tvtc-swom.appspot.com",
     messagingSenderId: "511661649198",
-    appId: "1:511661649198:web:1d53385172f7d114bc1ebf",
+    appId: "1:511661649198:web:1d53385172f7d114bc1ebf"
 };
+
 // تهيئة Firebase
 firebase.initializeApp(firebaseConfig);
 
@@ -20,20 +21,23 @@ document.getElementById('contactForm').addEventListener('submit', submitForm);
 function submitForm(e) {
     e.preventDefault();
 
-    // الحصول على القيم
+    // الحصول على القيم من النموذج
     var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value
+    var email = document.getElementById('email').value;
     var message = document.getElementById('message').value;
 
     // حفظ الرسالة في Firebase
-    saveMessage(name,  email, message);
+    saveMessage(name, email, message);
 
     // إعادة تعيين النموذج بعد الإرسال
     document.getElementById('contactForm').reset();
+
+    // رسالة تأكيد للمستخدم
+    alert("تم إرسال الرسالة بنجاح!");
 }
 
-// حفظ الرسالة إلى Firebase
-function saveMessage(name,  email, message) {
+// دالة لحفظ الرسالة في Firebase
+function saveMessage(name, email, message) {
     var newMessageRef = messagesRef.push();
     newMessageRef.set({
         name: name,
